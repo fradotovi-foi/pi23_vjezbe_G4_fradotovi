@@ -13,10 +13,17 @@ namespace Evaluation_Manager.Models {
 
         public bool CheckPassword(string password) 
         {
-            return true;
+           if(this.Password == password) 
+            {
+                return true;
+            } 
+           else 
+            {
+                return false;
+            }
         }
 
-
+        
 
     }
 }
