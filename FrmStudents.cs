@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Evaluation_Manager.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Evaluation_Manager
         public FrmStudents()
         {
             InitializeComponent();
+        }
+
+        private void FrmStudents_Load(object sender, EventArgs e) {
+           
+        }
+
+        private void dgvStudents_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
         }
     }
 }
