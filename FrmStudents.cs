@@ -18,8 +18,16 @@ namespace Evaluation_Manager
             InitializeComponent();
         }
 
-        private void FrmStudents_Load(object sender, EventArgs e) {
-           
+        private void FrmStudents_Load(object sender, EventArgs e)
+        {
+            dgvStudents.DataSource = null;
+            dgvStudents.DataSource = StudentRepository.GetStudents();
+            dgvStudents.Columns["Id"].DisplayIndex = 0;
+            dgvStudents.Columns["FirstName"].DisplayIndex = 1;
+            dgvStudents.Columns["LastName"].DisplayIndex = 2;
+            dgvStudents.Columns["Grade"].DisplayIndex = 3;
+
+
         }
 
         private void dgvStudents_CellContentClick(object sender, DataGridViewCellEventArgs e) {

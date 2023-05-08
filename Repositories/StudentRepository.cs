@@ -36,7 +36,7 @@ namespace Evaluation_Manager.Repositories {
         public static List<Student> GetStudents() {
             List<Student> students = new List<Student>();   
 
-            string sql = "SELECT * FROM Students";
+            string sql = "SELECT * FROM Students ORDER BY Id ";
 
             DB.OpenConnection();
 
