@@ -1,4 +1,5 @@
-﻿using Evaluation_Manager.Repositories;
+﻿using Evaluation_Manager.Models;
+using Evaluation_Manager.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +37,18 @@ namespace Evaluation_Manager
 
         private void btnEvaluateStudent_Click(object sender, EventArgs e)
         {
-            
+            Student student = new Student();
+
+            if(dgvStudents.CurrentRow.Visible != null)
+            {
+                student = dgvStudents.CurrentRow.DataBoundItem as Student;
+            }
+
+            frmEvaluateStudent frmEvaluateStudent = new frmEvaluateStudent(student);
+
+            frmEvaluateStudent.ShowDialog();
+
+
         }
     }
 }
