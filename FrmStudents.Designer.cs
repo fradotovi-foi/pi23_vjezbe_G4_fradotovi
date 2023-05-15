@@ -37,7 +37,7 @@
             // 
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStudents.Location = new System.Drawing.Point(16, 15);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvStudents.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.Size = new System.Drawing.Size(1035, 357);
@@ -61,8 +61,9 @@
             this.ClientSize = new System.Drawing.Size(1067, 471);
             this.Controls.Add(this.btnEvaluateStudent);
             this.Controls.Add(this.dgvStudents);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmStudents";
+            this.ShowIcon = false;
             this.Text = "FrmStudents";
             this.Load += new System.EventHandler(this.FrmStudents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();

@@ -39,7 +39,7 @@ namespace Evaluation_Manager
         {
             Student student = new Student();
 
-            if(dgvStudents.CurrentRow.Visible != null)
+            if(dgvStudents.CurrentRow != null)
             {
                 student = dgvStudents.CurrentRow.DataBoundItem as Student;
             }

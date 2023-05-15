@@ -30,8 +30,6 @@ namespace Evaluation_Manager
 
             this.txtEvaluationDate.Text = DateTime.Now.ToString();
 
-
-
         }
 
         private void cboActivity_SelectedIndexChanged(object sender, EventArgs e)
