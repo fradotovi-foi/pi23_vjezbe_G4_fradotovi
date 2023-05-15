@@ -21,7 +21,7 @@ namespace Evaluation_Manager.Models {
         {
             var evaluation = EvaluationRepository.GetEvaluation(student, activity);
 
-            if(evaluation != null)
+            if(evaluation == null)
             {
                 EvaluationRepository.InsertEvaluation(student,activity,this,points);
             }
