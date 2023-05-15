@@ -28,7 +28,7 @@ namespace Evaluation_Manager
             this.Text = Evaluatingstudent.FirstName +" "+ Evaluatingstudent.LastName;
             cboActivity.DataSource = ActivitiesRepository.GetActivities();
 
-            this.txtEvaluationDate.Text = DateTime.Now.ToString();
+            
 
         }
 
