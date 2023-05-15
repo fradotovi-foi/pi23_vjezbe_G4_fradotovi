@@ -71,7 +71,14 @@ namespace Evaluation_Manager
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            var activity = cboActivity.SelectedItem as Activity;
 
+            var Teacher = FrmLogin.LoggedTeacher;
+
+            int points = (int)numPoints.Value;
+
+
+            Teacher.PerformEvaluation(Evaluatingstudent, activity, points);
         }
     }
 }
